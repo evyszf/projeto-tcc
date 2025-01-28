@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva LAB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pc.png" type="png"> 
+</head>
+<body>
+    <div class="titulo-principal"><strong>RESERVA PARA OS LABORATÓRIOS</strong></div>
+	<div class="sub-titulo"style="margin-top: -15px;"><strong>ETE Ariano Vilar Suassuna</strong></div>
+    <form id="form" class= "container" method= "post">
+        <br> <br>
+        <div style="margin-bottom: -50px;"></div>
+        <h1> <img src="logo-lab.jpg" width="195" alt=""></h1>
+        <br>
+        <div style="margin-bottom: -50px;"></div>
+        <input autocomplete="off" id="email" type="email" type="number" placeholder="ㅤEmail / Matrícula" required>
+        <input autocomplete="off" id="password" type="password" placeholder="ㅤSenha" required>
+        <div style="margin-bottom: -50px;"></div>
+        <button type="submit">LOGIN</button>
+        <div class="texto-extra"><strong>AINDA NÃO É CADASTRADO?</strong></div>
+        <div style="margin-bottom: 50px;"></div>
+        <form action="../CADASTRO/cadastro.html" method="get">
+            <div class="button-wrapper">
+              <button type="submit" id="cadastre-se">cadastre-se</button>
+            </div>
+          </form> 
+          <script>
+            var button = document.getElementById("cadastre-se");
+            button.addEventListener("click", function() {
+              window.location.href = "../CADASTRO/cadastro.html";
+            });
+          </script>          
+    </form>
+</body>
+</html> 

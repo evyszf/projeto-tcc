@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pc.png" type="png">
+</head>
+<body>
+    <div class="titulo-principal"><strong>RESERVA PARA OS LABORATÓRIOS</strong></div>
+	<div class="sub-titulo"style="margin-top: -15px;"><strong>ETE Ariano Vilar Suassuna</strong></div>
+    <form id="form" class= "container" method= "post">
+        <h1> <img src="logo-lab.jpg" width="195" alt=""></h1>
+        <input autocomplete="off" id="text" type="text" placeholder="ㅤNome completo" required>
+        <input autocomplete="off" id="email" type="email" placeholder="ㅤEmail" required>
+        <input autocomplete="off" id="number" type="number" placeholder="ㅤMatrícula" required>
+        <input autocomplete="off" id="password" type="password" placeholder="ㅤSenha" required>
+        <input autocomplete="off" id="password" type="password" placeholder="ㅤConfirmar senha" required>
+        <button type="submit">CONCLUIR</button>
+        <div class="button-wrapper">
+            <button id="login">LOGIN</button>
+          </div>   
+          <script>
+            const loginButton = document.getElementById('login');
+          
+            loginButton.addEventListener('click', () => {
+              window.location.href = '../LOGIN/index.html';
+            });
+          </script>   
+    </form>
+</body>
+</html>
